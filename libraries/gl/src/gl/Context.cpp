@@ -233,6 +233,8 @@ void Context::create() {
             _version = 0x0405;
         } else if (glewIsSupported("GL_VERSION_4_3")) {
             _version = 0x0403;
+        } else if (glewIsSupported("GL_VERSION_3_3")) {
+            _version = 0x0303;
         }
         glGetError();
         wglMakeCurrent(0, 0);

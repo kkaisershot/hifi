@@ -22,7 +22,8 @@
 #include "GLHelpers.h"
 
 // Minimum gl version required is 4.1
-#define MINIMUM_GL_VERSION 0x0401
+// [blitter] I changed this to 3.3 and hifi boots up and is usable. Beats crashing when trying to create a 4.x context.
+#define MINIMUM_GL_VERSION 0x0303
 
 OpenGLVersionChecker::OpenGLVersionChecker(int& argc, char** argv) :
     QApplication(argc, argv)
